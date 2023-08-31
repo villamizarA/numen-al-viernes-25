@@ -1,9 +1,8 @@
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Navbar } from "./components/Navbar";
-import { AuthProvider } from "./context/authContext";
-import { ProtectedRoute } from "./ProtectedRoute";
+import { AuthProvider } from "./context/AuthContext";
 
+import { Navbar } from "./components/Navbar";
+import ProtectedRoute  from "./ProtectedRoute";
 import Home from "./pages/Home";
 import ActoresGame from "./components/ActoresGame";
 import RegisterPage from "./pages/RegisterPage";
@@ -50,7 +49,7 @@ function App() {
         </BrowserRouter>
       </RecordatorioProvider>
     </AuthProvider>
-  );
+  )
 }
 
 export default App;
