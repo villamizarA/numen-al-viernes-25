@@ -4,9 +4,6 @@ import cookieParser  from "cookie-parser";
 import cors from 'cors';
 import authRoutes from "./routes/auth.routes.js";
 import recordatoriosRoutes from "./routes/recordatorios.routes.js";
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 const app = express()
 app.use(cors({
