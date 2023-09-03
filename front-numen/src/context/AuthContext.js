@@ -90,8 +90,7 @@ export const AuthProvider = ({ children }) => {
         isAuthenticated,
         errors,
         loading,
-      }}
-    >
+      }}>
       {children}
     </AuthContext.Provider>
   );
