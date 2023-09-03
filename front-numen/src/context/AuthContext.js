@@ -80,20 +80,19 @@ export const AuthProvider = ({ children }) => {
     checkLogin();
   }, []);
 
-  return (
-    <AuthContext.Provider
-      value={{
-        user,
-        signup,
-        signin,
-        logout,
-        isAuthenticated,
-        errors,
-        loading,
-      }}>
-      {children}
-    </AuthContext.Provider>
-  );
-};
-
+    return (
+        <AuthContext.Provider
+            value={{
+                signup,
+                signin,
+                logout,
+                loading,
+                user,
+                isAuthenticated,
+                errors,
+            }}>
+            {children}
+        </AuthContext.Provider>
+    )
+}
 export default AuthContext;
