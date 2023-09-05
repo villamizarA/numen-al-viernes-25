@@ -66,17 +66,15 @@ export function RecordatorioProvider({ children }) {
     }
   };
 
-  return (
-    <RecordatorioContext.Provider
-      value={{
-        recordatorios,
-        getRecordatorios,
-        deleteRecordatorio,
-        createRecordatorio,
-        getRecordatorio,
-        updateRecordatorio,
-      }}>
-      {children}
-    </RecordatorioContext.Provider>
-  );
+  return <RecordatorioContext.Provider
+    value={{
+      recordatorios,
+      getRecordatorios,
+      deleteRecordatorio,
+      createRecordatorio,
+      getRecordatorio,
+      updateRecordatorio,
+    }}>
+    {children}
+  </RecordatorioContext.Provider>
 }
