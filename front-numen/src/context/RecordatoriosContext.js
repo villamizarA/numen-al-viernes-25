@@ -73,8 +73,7 @@ export function RecordatorioProvider({ children }) {
         createRecordatorio,
         getRecordatorio,
         updateRecordatorio
-      }}
->
+      }}>
       {children}
     </RecordatorioContext.Provider>
 }
