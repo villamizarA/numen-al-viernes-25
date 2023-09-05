@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Card, Message, Button, Input, Label } from "../components/utiles";
-import { registerSchema } from "../schemas/auth";
 
 function RegisterPage() {
   const {
