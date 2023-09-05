@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useAuth } from "../context/authContext";
+import { useAuth } from "../context/AuthContext";
 import { ButtonLink } from "./utiles/ButtonLink";
 import { HiUserCircle } from "react-icons/hi";
 import { FaHome, FaBook, FaBars, FaTimes } from "react-icons/fa"; // Agregamos FaBars y FaTimes
