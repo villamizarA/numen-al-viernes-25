@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from "react";
-import {createRecordatorioRequest,
+import {
+  createRecordatorioRequest,
   getRecordatoriosRequest,
   deleteRecordatorioRequest,
   getRecordatorioRequest,
@@ -66,14 +67,15 @@ export function RecordatorioProvider({ children }) {
   };
 
   return <RecordatorioContext.Provider
-      value={{
-        recordatorios,
-        getRecordatorios,
-        deleteRecordatorio,
-        createRecordatorio,
-        getRecordatorio,
-        updateRecordatorio
-      }}>
-          {children}
-    </RecordatorioContext.Provider>
+    value={{
+      recordatorios,
+      getRecordatorios,
+      deleteRecordatorio,
+      createRecordatorio,
+      getRecordatorio,
+      updateRecordatorio
+    }}
+  >
+    {children}
+  </RecordatorioContext.Provider>
 }
