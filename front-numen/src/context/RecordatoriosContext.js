@@ -66,8 +66,7 @@ export function RecordatorioProvider({ children }) {
     }
   };
 
-  return (
-    <RecordatorioContext.Provider
+  return <RecordatorioContext.Provider
       value={{
         recordatorios,
         getRecordatorios,
@@ -78,5 +77,4 @@ export function RecordatorioProvider({ children }) {
       }}>
       {children}
     </RecordatorioContext.Provider>
-  );
 }
